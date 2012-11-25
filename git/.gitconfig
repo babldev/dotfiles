@@ -1,3 +1,7 @@
 [user]
     name = Brady Law
     email = bradyl16@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
