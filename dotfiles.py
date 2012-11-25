@@ -58,7 +58,6 @@ class LinkAction(object):
 
     def link(self):
         """Create the symlink."""
-        print self.dest
         if not os.path.exists(self.dest) and not os.path.lexists(self.dest):
             os.symlink(self.source, self.dest)
             logger.info("Successfully symlinked to destination \"%s\"." % (self.dest))
