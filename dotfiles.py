@@ -23,10 +23,10 @@ class Dotfile(object):
 
     def install(self):
         f = open(self.install_file_path, 'r')
-        logger.info("Running install commands for \"%s\" dotfile path \"%s\"." % (self.path, self.install_file_path))
+        logger.info("Running install commands for %s." % (self.path))
 
         for line in f.readlines():
-            action = LinkAction.action_from_string(self.path, line)
+            action = LinkAction.action_from_string(os.path.join(MODULE_PATH, self.path), line)
             if action:
                 action.link()
 
@@ -35,7 +35,7 @@ class Dotfile(object):
     @property
     def install_file_path(self):
         """Path to the /install file."""
-        return os.path.join(self.path, "install")
+        return os.path.join(MODULE_PATH, self.path, "install")
 
     @staticmethod
     def all_dotfiles():
@@ -43,7 +43,7 @@ class Dotfile(object):
         dotfiles = []
         for dir in os.listdir(MODULE_PATH):
             if os.path.exists(os.path.join(dir, "install")):
-                dotfiles.append(Dotfile(os.path.join(MODULE_PATH, dir)))
+                dotfiles.append(Dotfile(dir))
         return dotfiles
 
 
