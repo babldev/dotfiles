@@ -1,6 +1,7 @@
 [alias]
     st = status
     cm = commit
+    br = branch
 [user]
     name = Brady Law
     email = bradyl16@gmail.com
