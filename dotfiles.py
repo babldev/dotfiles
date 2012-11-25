@@ -9,7 +9,7 @@ import dotfiles
 MODULE_PATH = os.path.dirname(dotfiles.__file__)
 
 # Create the logger.
-FORMAT = '%(asctime)-15s %(message)s'
+FORMAT = ': %(message)s'
 logging.basicConfig(format=FORMAT)
 logger = logging.getLogger('dotfiles')
 logger.setLevel(logging.WARNING)
