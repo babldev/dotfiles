@@ -1,1 +1,2 @@
 link "Preferences.sublime-settings" to "~/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+link "JavaScript.sublime-settings" to "~/Library/Application Support/Sublime Text 2/Packages/User/JavaScript.sublime-settings"
