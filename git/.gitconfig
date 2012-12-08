@@ -2,6 +2,8 @@
     st = status
     cm = commit
     br = branch
+[credential]
+    helper = osxkeychain
 [user]
     name = Brady Law
     email = bradyl16@gmail.com
