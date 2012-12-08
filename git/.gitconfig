@@ -4,6 +4,8 @@
     br = branch
 [credential]
     helper = osxkeychain
+[push]
+    default = simple
 [user]
     name = Brady Law
     email = bradyl16@gmail.com
