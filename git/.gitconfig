@@ -2,6 +2,10 @@
     st = status
     cm = commit
     br = branch
+[color]
+    diff = auto
+    status = auto
+    branch = auto
 [credential]
     helper = osxkeychain
 [push]
@@ -9,7 +13,3 @@
 [user]
     name = Brady Law
     email = bradyl16@gmail.com
-[color]
-    diff = auto
-    status = auto
-    branch = auto
